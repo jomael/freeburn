@@ -1,0 +1,74 @@
+package FreeBurner;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  Resources in 'Common\Resources.pas',
+  Constants in 'Common\Constants.pas',
+  Devices in 'Library Units\Devices.pas',
+  Device in 'Library Units\Device.pas',
+  DeviceInfo in 'Library Units\DeviceInfo.pas',
+  DiscInfo in 'Library Units\DiscInfo.pas',
+  DeviceNotifier in 'Library Units\DeviceNotifier.pas',
+  DeviceTypes in 'Library Units\DeviceTypes.pas',
+  DeviceHelper in 'Library Units\DeviceHelper.pas',
+  CustomImage in 'Image Units\CustomImage.pas',
+  ISOImage in 'Image Units\ISOImage.pas',
+  AudioImage in 'Image Units\AudioImage.pas',
+  DVDImage in 'Image Units\DVDImage.pas',
+  HandledThread in 'Common\HandledThread.pas',
+  BurnerThread in 'Library Units\BurnerThread.pas',
+  EraserThread in 'Library Units\EraserThread.pas',
+  wnaspi32 in 'SCSI Units\wnaspi32.pas',
+  ASPIUnit in 'SCSI Units\ASPIUnit.pas',
+  MSAcm in 'SCSI Units\MSAcm.pas',
+  SCSIDefs in 'SCSI Units\SCSIDefs.pas',
+  SCSITypes in 'SCSI Units\SCSITypes.pas',
+  SCSIUnit in 'SCSI Units\SCSIUnit.pas',
+  skSCSI in 'SCSI Units\skSCSI.pas',
+  SPTIUnit in 'SCSI Units\SPTIUnit.pas',
+  CovertFuncs in 'Common\CovertFuncs.pas',
+  CDROMIOCTL in 'SCSI Units\CDROMIOCTL.pas',
+  CDDAText in 'Library Units\CDDAText.pas',
+  deviceconsts in 'Library Units\deviceconsts.pas',
+  DeviceReader in 'Library Units\DeviceReader.pas',
+  CDBufferedStream in 'Common\CDBufferedStream.pas',
+  ISO9660BootClass in 'Image Units\ISO9660BootClass.pas',
+  ISO9660ClassTypes in 'Image Units\ISO9660ClassTypes.pas',
+  ISO9660ImageTree in 'Image Units\ISO9660ImageTree.pas',
+  ISO9660PrimaryVolClass in 'Image Units\ISO9660PrimaryVolClass.pas',
+  ISO9660StreamHandler in 'Image Units\ISO9660StreamHandler.pas',
+  ISO9660SupplementVolClass in 'Image Units\ISO9660SupplementVolClass.pas',
+  AudioACM in 'Common\AudioACM.pas',
+  MP3Convert in 'Common\MP3Convert.pas',
+  WaveUtils in 'Common\WaveUtils.pas',
+  FileImage in 'Image Units\FileImage.pas',
+  DiskCDDBInfo in 'Library Units\DiskCDDBInfo.pas';
+
+end.
